@@ -1,0 +1,14 @@
+{
+  "name": "Remove Youtube comments",
+  "version": "0.1",
+  "description": "Removes/hides all Youtube comments from videos",
+  "manifest_version": 2,
+  "content_scripts":
+  [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content_scripts.js"],
+      "run_at" : "document_idle"
+    }
+  ]
+}
